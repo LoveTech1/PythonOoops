@@ -38,16 +38,16 @@ class Student:
 
     @classmethod
     def get_average_grade(cls):
-        return calculate_average_grade(cls.all_students)
+        return cls.calculate_average_grade(cls.all_students)
 
     @classmethod
     def get_best_student(cls):
         current_best_student = None
 
-        for studnet in cls.all_students:
-            if best_student == None or best_student.grade < student.grade:
+        for student in cls.all_students:
+            if current_best_student == None or current_best_student.grade < student.grade:
                 best_student = student
-        return best_student
+        return current_best_student
 
 
     

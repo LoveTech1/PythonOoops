@@ -1,0 +1,36 @@
+                    Geometric Inheritance
+
+Create 4 classes: Polygon, Triangle, Rectangle, Square.
+The Triangle and Rectangle class should be subclasses of Polygon and Square should be subclass 
+of Rectangle
+
+Your Polygon class should raise a NotImplementationError when the get_area() and get_sides()
+methods are called. However, it should correctly return the perimeter of the polygon when
+get_perimeter() is calles. Treat the Polygon class as an abstract class.
+
+Your Triangle class should have a constructor that takes in 3 arguements, which will be the lenghts of the 3 sides
+of the triangle. You may assume the sides passed to the constructor will always form a valid triangle.
+
+Your Rectangle class should have a constructor that takes in 1 arguement, which will be the length of each side of the
+Square.
+
+Your Triangle and Rectangle classes should both implement the following methods:
+1. get_sides(): This method returns a list containing the length of the sides of the shape
+2. get_area(): This method returns the area of the polygon
+
+Your square class should have an implementation for its constructor, and rely on the Rectangle superclass for 
+implementations fo get_sides() and get_area()
+
+Note: To calculate the area of a triangle given three sides lenghts(x,y and z)you can use the following formula. First
+calculate the semi perimeter s using: s = (x + y + z) / 2. Then calculate the area A using:
+A = math.sqrt(s * (s - x ) * (s - y) * (s - z))
+
+
+
+
+
+
+
+
+
+
